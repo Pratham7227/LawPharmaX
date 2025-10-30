@@ -29,6 +29,7 @@ export default function Footer() {
               <li><Link href="/amendments" className="text-sm hover:text-white transition-colors">Amendments</Link></li>
               <li><Link href="/penalties" className="text-sm hover:text-white transition-colors">Penalties</Link></li>
               <li><Link href="/case-references" className="text-sm hover:text-white transition-colors">Case References</Link></li>
+              <li><Link href="/cases-news" className="text-sm hover:text-white transition-colors">Cases & News</Link></li>
             </ul>
           </div>
 

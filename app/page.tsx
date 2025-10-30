@@ -165,6 +165,15 @@ export default function Home() {
                 stats: '50+ Resources',
                 featured: true,
               },
+              {
+                icon: <Users className="w-8 h-8" />,
+                title: 'Cases & News',
+                description: 'Latest legal developments, court judgments, regulatory changes, and breaking news in pharmaceutical law.',
+                href: '/cases-news',
+                color: 'from-orange-500 to-red-600',
+                stats: 'Daily Updates',
+                featured: true,
+              },
             ].map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -205,6 +214,136 @@ export default function Home() {
                 </Link>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pharmacy Laws of India Section */}
+      <section className="py-20 bg-white dark:bg-slate-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <Scale className="w-4 h-4" />
+              Pharmaceutical Framework
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+              Pharmacy Laws of India
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+              Comprehensive guide to pharmaceutical legislation and regulations governing the drug industry
+            </p>
+          </motion.div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                {
+                  title: 'Drugs & Cosmetics Act',
+                  subtitle: '1940',
+                  color: 'bg-gray-100 dark:bg-gray-800',
+                  icon: '💊',
+                  description: 'Foundation law for drug regulation'
+                },
+                {
+                  title: 'Pharmacy Act',
+                  subtitle: '1948',
+                  color: 'bg-red-100 dark:bg-red-900/30',
+                  icon: '🏥',
+                  description: 'Professional regulation and education'
+                },
+                {
+                  title: 'NDPS Act',
+                  subtitle: '1985',
+                  color: 'bg-green-100 dark:bg-green-900/30',
+                  icon: '🚫',
+                  description: 'Controlled substances regulation'
+                },
+                {
+                  title: 'Magic Remedies Act',
+                  subtitle: '1954',
+                  color: 'bg-blue-100 dark:bg-blue-900/30',
+                  icon: '📢',
+                  description: 'Advertisement control'
+                },
+                {
+                  title: 'Price Control Order',
+                  subtitle: '2013',
+                  color: 'bg-orange-100 dark:bg-orange-900/30',
+                  icon: '💰',
+                  description: 'Drug price regulation'
+                },
+                {
+                  title: 'Medical Devices Rules',
+                  subtitle: '2017',
+                  color: 'bg-purple-100 dark:bg-purple-900/30',
+                  icon: '🩺',
+                  description: 'Medical device regulation'
+                },
+                {
+                  title: 'Clinical Trials Rules',
+                  subtitle: '2019',
+                  color: 'bg-purple-100 dark:bg-purple-900/30',
+                  icon: '🧪',
+                  description: 'Research guidelines'
+                },
+                {
+                  title: 'Online Pharmacy Rules',
+                  subtitle: '2018',
+                  color: 'bg-teal-100 dark:bg-teal-900/30',
+                  icon: '💻',
+                  description: 'E-pharmacy regulation'
+                },
+              ].map((article, index) => (
+                <motion.div
+                  key={article.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <Link href={article.title === 'Drugs & Cosmetics Act' ? '/constitution/demo' : '/constitution'}>
+                    <Card className="h-full hover:shadow-lg transition-all duration-300 group cursor-pointer border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600">
+                      <CardContent className="p-4 text-center">
+                        <div className={`w-12 h-12 ${article.color} rounded-xl flex items-center justify-center text-lg mb-3 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                          {article.icon}
+                        </div>
+                        
+                        <CardTitle className="text-sm font-bold text-slate-900 dark:text-slate-100 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                          {article.title}
+                        </CardTitle>
+                        
+                        <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-2">
+                          {article.subtitle}
+                        </p>
+                        
+                        <CardDescription className="text-xs text-slate-600 dark:text-slate-400 leading-tight">
+                          {article.description}
+                        </CardDescription>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="text-center mt-8"
+            >
+              <Link href="/constitution">
+                <Button className="bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3">
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  Explore All Pharmacy Laws
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

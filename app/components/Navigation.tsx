@@ -10,9 +10,11 @@ import Button from './ui/Button';
 const navigationItems = [
   { href: '/', label: 'Home' },
   { href: '/pharmacy-laws', label: 'Pharmacy Laws' },
+  { href: '/constitution', label: 'Constitution' },
   { href: '/amendments', label: 'Amendments' },
   { href: '/penalties', label: 'Penalties' },
   { href: '/case-references', label: 'Case References' },
+  { href: '/cases-news', label: 'Cases & News' },
   { href: '/judiciary-preparation', label: 'Judiciary Prep' },
   { href: '/notes-summaries', label: 'Notes & Study Materials' },
   { href: '/about', label: 'About' },

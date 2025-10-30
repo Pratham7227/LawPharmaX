@@ -10,6 +10,25 @@ import Button from '../components/ui/Button';
 const pharmacyLaws = [
   {
     id: 1,
+    title: 'Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954',
+    section: 'Act No. 21 of 1954',
+    category: 'Advertisement Control',
+    summary: 'Prohibits advertisements of drugs and remedies that claim to cure certain diseases and magic remedies that claim miraculous powers.',
+    details: 'Comprehensive act that controls objectionable advertisements of drugs in magic remedies. Prohibits advertisements claiming to cure diseases like cancer, diabetes, epilepsy, and sexual disorders. Covers definition of drugs, magic remedies, and objectionable advertisements with strict penalties.',
+    keyProvisions: [
+      'Definition of drugs and magic remedies (Section 2)',
+      'Prohibition of objectionable advertisements (Section 3)',
+      'Diseases for which ads are prohibited (Section 3)',
+      'Magic remedy advertisement controls',
+      'Exemptions for qualified medical practitioners',
+      'Powers of government to prohibit ads (Section 6)'
+    ],
+    penalties: 'First conviction: imprisonment up to 6 months and/or fine up to ₹1,000; subsequent conviction: imprisonment up to 1 year and/or fine up to ₹5,000',
+    lastUpdated: '2023',
+    authority: 'Central Drugs Standard Control Organization (CDSCO)',
+  },
+  {
+    id: 2,
     title: 'Drugs and Cosmetics Act, 1940',
     section: 'Act No. 23 of 1940',
     category: 'Drug Control',
@@ -28,7 +47,7 @@ const pharmacyLaws = [
     authority: 'Central Drugs Standard Control Organization (CDSCO)',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Pharmacy Act, 1948',
     section: 'Act No. 8 of 1948',
     category: 'Practice Regulation',
@@ -47,7 +66,7 @@ const pharmacyLaws = [
     authority: 'Pharmacy Council of India (PCI)',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Narcotic Drugs and Psychotropic Substances Act, 1985',
     section: 'Act No. 61 of 1985',
     category: 'Controlled Substances',
