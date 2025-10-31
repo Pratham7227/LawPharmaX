@@ -15,9 +15,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Law & Pharmacy Learning App",
-  description: "Smart Learning for Pharmacy Laws & Judiciary Preparation",
-  keywords: ["pharmacy law", "judiciary preparation", "legal education", "pharmacy regulations"],
+  title: "PharmaJuris - Pharmaceutical Law Education",
+  description: "Comprehensive pharmaceutical law education and regulatory guidance platform",
+  keywords: ["pharmaceutical law", "pharmacy regulations", "legal education", "drug laws", "CDSCO", "pharmacy practice"],
   authors: [{ name: "Pratham - Frontend Developer" }],
 };
 

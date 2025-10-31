@@ -12,12 +12,12 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-linear-to-r from-blue-800 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LP</span>
+                <span className="text-white font-bold text-sm">PJ</span>
               </div>
-              <span className="text-xl font-bold text-white">Law & Pharmacy</span>
+              <span className="text-xl font-bold text-white">PharmaJuris</span>
             </div>
             <p className="text-sm leading-relaxed">
-              Simplifying complex legal and pharmacy regulations into clear, interactive learning experiences for students and professionals.
+              Comprehensive pharmaceutical law education and regulatory guidance for legal professionals, pharmacists, and students.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col sm:flex-row justify-center items-center">
           <p className="text-sm text-slate-400 text-center">
-            © {currentYear} Law & Pharmacy Learning App. All rights reserved.
+            © {currentYear} PharmaJuris. All rights reserved.
           </p>
           
         </div>
